@@ -2,3 +2,9 @@ build
 composer.lock
 docs
 vendor
+
+# PHPStorm
+.idea/*
+
+# Composer
+composer.phar
