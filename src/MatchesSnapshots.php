@@ -17,9 +17,15 @@ trait MatchesSnapshots
 {
     use SnapshotDirectoryAware, SnapshotIdAware;
 
-    protected int $snapshotIncrementor = 0;
+    /**
+     * @var int
+     */
+    protected $snapshotIncrementor = 0;
 
-    protected array $snapshotChanges = [];
+    /**
+     * @var mixed[]
+     */
+    protected $snapshotChanges = [];
 
     /** @before */
     public function setUpSnapshotIncrementor()
@@ -40,7 +46,9 @@ trait MatchesSnapshots
             return;
         }
 
-        $formattedMessages = implode(PHP_EOL, array_map(fn (string $message) => "- {$message}", $this->snapshotChanges));
+        $formattedMessages = implode(PHP_EOL, array_map(function (string $message) {
+            return "- {$message}";
+        }, $this->snapshotChanges));
 
         $this->markTestIncomplete($formattedMessages);
     }
