@@ -1,5 +1,5 @@
 {
-    "name": "spatie/phpunit-snapshot-assertions",
+    "name": "bmarsaud/phpunit-snapshot-assertions",
     "description": "Snapshot testing with PHPUnit",
     "keywords": [
         "spatie",
@@ -7,15 +7,22 @@
         "phpunit",
         "snapshot",
         "assert",
-        "testing"
+        "testing",
+        "php7.3"
     ],
-    "homepage": "https://github.com/spatie/phpunit-snapshot-assertions",
+    "homepage": "https://github.com/bmarsaud/phpunit-snapshot-assertions",
     "license": "MIT",
     "authors": [
         {
             "name": "Sebastian De Deyne",
             "email": "sebastian@spatie.be",
             "homepage": "https://spatie.be",
+            "role": "Developer"
+        },
+        {
+            "name": "Bastien Marsaud",
+            "email": "bastien@mouseover.fr",
+            "homepage": "https://mouseover.fr",
             "role": "Developer"
         }
     ],

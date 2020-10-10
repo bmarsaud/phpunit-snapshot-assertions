@@ -7,6 +7,17 @@
 [![StyleCI](https://styleci.io/repos/75926188/shield?branch=master)](https://styleci.io/repos/75926188)
 [![Total Downloads](https://img.shields.io/packagist/dt/spatie/phpunit-snapshot-assertions.svg?style=flat-square)](https://packagist.org/packages/spatie/phpunit-snapshot-assertions)
 
+## Why this fork ?
+The purpose of this fork is to make the `spatie/phpunit-snapshot-assertions` package compatible with PHP 7.3.
+
+The compatibility is ensured using [Rector](https://github.com/rectorphp/rector).
+
+Note that he only version currently available is the `4.2.2`.
+
+A more durable and reliable way would be to use a GitHub action applying Rector on each tag pushed on the original repository.
+
+## Description
+
 > Snapshot testing is a way to test without writing actual test cases
 
 ```php
